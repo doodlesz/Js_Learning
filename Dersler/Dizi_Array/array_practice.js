@@ -41,12 +41,25 @@ console.log(meyveler);
 
 let ogr1= ["Yigit","Bilgi",2010,[70,60,80]];
 let ogr2= ["Ada","Bilgi",2012,[80,80,90]];
-let ogr3= ["Ahmet","Bilgi",2009[60,60,70]];
+let ogr3= ["Ahmet","Bilgi",2009,[60,60,70]];
 
-let ogr1_ortalama=ogr1[3][0];
-let ogrenci1="Adı:"+ogr1[0]+"Soyadi"+ogr1[1]+"Yasi"+ogr1[2]
+let ogr1yasi=new Date().getFullYear() - ogr1[2];
+let ogr2yasi=new Date().getFullYear() - ogr2[2];
+let ogr3yasi=new Date().getFullYear() - ogr3[2];
 
-console.log(ogr1_ortalama);
+console.log(ogr1yasi,ogr2yasi,ogr3yasi);
+
+let ogr1not=(ogr1[3][0]+ ogr1[3][1] + ogr1[3][2])/3;
+let ogr2not=(ogr2[3][0]+ ogr2[3][1] + ogr2[3][2])/3;
+let ogr3not=(ogr3[3][0]+ ogr3[3][1] + ogr3[3][2])/3;
+
+
+
+console.log(`Adi ve Soyadi:${ogr1[0]} ${ogr1[1]} Yasi ${ogr1yasi} ve not ortalamasi: ${ogr1not}`);
+console.log(`Adi ve Soyadi:${ogr2[0]} ${ogr2[1]} Yasi ${ogr2yasi} ve not ortalamasi: ${ogr2not}`);
+console.log(`Adi ve Soyadi:${ogr3[0]} ${ogr3[1]} Yasi ${ogr3yasi} ve not ortalamasi: ${ogr3not}`);
+
+
 
 
 
